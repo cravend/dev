@@ -1,0 +1,58 @@
+@import url("/assets/css/bootstrap.min.css");
+@import url("/assets/css/bootstrap-theme.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:400,500,600,700');
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.background {
+    height: 100%;
+    background-image: url("/assets/images/mac-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 150%;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+.navigation a:hover {
+    color: #9FFFF5;
+}
+
+.nav-brand {
+    cursor:default;
+    font-weight: 700;
+    font-size: 250%;
+}
+
+.float-right {
+    float: right !important ;
+}
