@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:400,500,600,700');
 
 * {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 html, body {
@@ -69,14 +69,14 @@ p {
 
 
 .blank a {
-    overflow: hidden;
-    margin: 10px 10px;
-    padding: 5px 16px;
+    /*overflow: hidden;*/
+    display: block;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     text-decoration: none;
     color: white;
     transition: .3s;
+    /*border: 1px solid black;*/
 }
 
 .blank a:hover, a:focus {
@@ -102,6 +102,10 @@ p {
 }
 
 
+.social {
+    margin-bottom: 20px;
+}
+
 #home {
     /*background-image: url("/assets/images/mac-background.jpg");*/
     background-size: cover;
@@ -112,7 +116,6 @@ p {
     padding: 15px;
     overflow: hidden;
     background-color: #C4FFF9;
-    min-height: 75%;
 }
 
 #projects {
@@ -136,3 +139,13 @@ p {
     font-size: 20px; 
 }
 
+
+ @media only screen and (max-width: 768px) {
+    .title {
+        font-size: 300%;
+    }
+    
+    .featurette-heading {
+        font-size: 200%;
+    }
+}
