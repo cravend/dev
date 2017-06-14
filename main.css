@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:400,500,600,700');
 
 * {
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 html, body {
@@ -41,7 +41,7 @@ p {
     border-bottom: 4px solid transparent;
     font-size: 150% !important;
     text-decoration: none;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .navbar a:focus, a:hover, .active a {
@@ -68,12 +68,21 @@ p {
 }
 
 
-.right {
-    text-align: left;
+.blank a {
+    overflow: hidden;
+    margin: 10px 10px;
+    padding: 5px 16px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
 }
 
-.left {
-    text-align: right;
+.blank a:hover, a:focus {
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    
 }
 
 .flex {
@@ -94,7 +103,7 @@ p {
 
 
 #home {
-    background-image: url("/assets/images/mac-background.jpg");
+    /*background-image: url("/assets/images/mac-background.jpg");*/
     background-size: cover;
     background-attachment: fixed;
 }
