@@ -2,8 +2,13 @@
 @import url("/assets/css/bootstrap-theme.min.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:400,500,600,700');
 
+* {
+    /*border: 1px solid black;*/
+}
+
 html, body {
     height: 100%;
+    color: #5E6973;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,45 +19,111 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.background {
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 700%;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    color: #5E6973;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 5px 16px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    font-size: 150% !important;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.navbar a:focus, a:hover, .active a {
+    background-color: transparent !important;
+    border-top: 4px solid #26E9ED;
+    border-bottom: 4px solid #26E9ED;
+}
+
+.nav-brand {
+    cursor: default;
+    font-weight: 700;
+    font-size: 250%;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.full {
     height: 100%;
+}
+
+
+.featurette-heading {
+    font-size: 500%;
+}
+
+
+.right {
+    text-align: left;
+}
+
+.left {
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flex-item {
+    position: absolute;
+}
+
+
+.nav-label {
+    text-align: center;
+}
+
+
+#home {
     background-image: url("/assets/images/mac-background.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
-.navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#about {
+    padding: 15px;
     overflow: hidden;
+    background-color: #C4FFF9;
+    height: 75%;
 }
 
-.navigation li {
-    float: left;
+#projects {
+    padding: 15px;
+    overflow: hidden;
+    background-color: #9CEAEF;
 }
 
-.navigation a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 150%;
-    -webkit-transition: color .3s;
-    transition: color .3s;
+#contact {
+    padding: 15px;
+    overflow: hidden;
+    color: white;
+    background-color: #07BEB8;
 }
 
-.navigation a:hover {
-    color: #9FFFF5;
+#footer p {
+    background-color: #5E6973;
+    color: white;
+    margin-bottom: 0;
+    padding: 3px 10px;
+    font-size: 20px; 
 }
 
-.nav-brand {
-    cursor:default;
-    font-weight: 700;
-    font-size: 250%;
-}
-
-.float-right {
-    float: right !important ;
-}
