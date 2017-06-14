@@ -27,7 +27,7 @@ p {
 }
 
 .navbar {
-    background-color: transparent !important;
+    background-color: white !important;
 }
 
 .navbar a {
@@ -103,7 +103,7 @@ p {
     padding: 15px;
     overflow: hidden;
     background-color: #C4FFF9;
-    height: 75%;
+    min-height: 75%;
 }
 
 #projects {
