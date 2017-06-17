@@ -1,10 +1,7 @@
 @import url("/assets/css/bootstrap.min.css");
-@import url("/assets/css/bootstrap-theme.min.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:400,500,600,700');
 
-* {
-    /*border: 1px solid black;*/
-}
+/**{border: 1px solid black;}*/
 
 html, body {
     height: 100%;
@@ -63,6 +60,12 @@ p {
 }
 
 
+.bottom {
+    margin-top: auto;
+    text-decoration: none;
+    color: black;
+}
+
 .featurette-heading {
     font-size: 500%;
 }
@@ -87,20 +90,19 @@ p {
 
 .flex {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 
 .flex-item {
     position: absolute;
 }
 
+.navbar-toggle {
+    font-family: 'Open Sans', sans-serif;
 
-.nav-label {
-    text-align: center;
 }
-
 
 .social {
     margin-bottom: 20px;
@@ -113,19 +115,19 @@ p {
 }
 
 #about {
-    padding: 15px;
+    padding: 15% 0;
     overflow: hidden;
     background-color: #C4FFF9;
 }
 
 #projects {
-    padding: 15px;
+    padding: 5% 0;
     overflow: hidden;
     background-color: #9CEAEF;
 }
 
 #contact {
-    padding: 15px;
+    padding: 5% 0;
     overflow: hidden;
     color: white;
     background-color: #07BEB8;
