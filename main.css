@@ -16,6 +16,18 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+footer p {
+    background-color: #5E6973;
+    color: white;
+    margin-bottom: 0;
+    padding: 3px 10px;
+    font-size: 20px; 
+}
+
+/*.one-word-per-line {*/
+    /*word-spacing: <parent-width>; */
+/*} */
+
 .title {
     font-weight: 700;
     text-transform: uppercase;
@@ -24,7 +36,7 @@ p {
 }
 
 .navbar {
-    background-color: white !important;
+    background-color: white;
 }
 
 .navbar a {
@@ -55,21 +67,9 @@ p {
     text-transform: uppercase;
 }
 
-.full {
-    height: 100%;
-}
-
-
-.bottom {
-    margin-top: auto;
-    text-decoration: none;
-    color: black;
-}
-
-.featurette-heading {
+.heading {
     font-size: 500%;
 }
-
 
 .blank a {
     /*overflow: hidden;*/
@@ -88,18 +88,6 @@ p {
     
 }
 
-.flex {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-item {
-    /*position: absolute;*/
-}
-
 .navbar-toggle {
     font-family: 'Open Sans', sans-serif;
 
@@ -110,9 +98,14 @@ p {
 }
 
 #home {
-    /*background-image: url("/assets/images/mac-background.jpg");*/
+    height: 100%;
     background-size: cover;
     background-attachment: fixed;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #about {
@@ -134,21 +127,19 @@ p {
     background-color: #07BEB8;
 }
 
-#footer p {
-    background-color: #5E6973;
-    color: white;
-    margin-bottom: 0;
-    padding: 3px 10px;
-    font-size: 20px; 
-}
-
 
  @media only screen and (max-width: 768px) {
     .title {
         font-size: 300%;
     }
     
-    .featurette-heading {
+    .heading {
         font-size: 200%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-lg-right {
+        text-align: right;
     }
 }
