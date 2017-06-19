@@ -96,7 +96,7 @@ p {
 }
 
 .flex-item {
-    position: absolute;
+    /*position: absolute;*/
 }
 
 .navbar-toggle {
