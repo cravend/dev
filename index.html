@@ -14,7 +14,7 @@
     <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"><i class="fa fa-fw fa-2x fa-bars"></i></button>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"><i class="fa fa-fw fa-2x fa-barss"></i></button>
         </div>
         <div>
           <div class="collapse navbar-collapse" id="navigation">
@@ -30,8 +30,13 @@
     </nav>   
 
     <div id="home">
-      <h1 class="title">Dalton<br>Craven</h1>
+      <h1 class="title flex-item">Dalton<br>Craven</h1>
+      <div class="next flex-item">
+        <a href="#about"><i class="fa fa-fw fa-5x fa-caret-down"></i></a>
+      </div>
     </div>
+
+    <!--<div id="home"><h1 class="title">Dalton<br>Craven</h1></div>-->
       
     <div id="about">
       <div class="col-lg-3 col-md-12 col-lg-offset-1">
@@ -86,9 +91,11 @@
           </div>
         </div>
         
-        <button id="toggleproject" class="btn btn-default" data-toggle="collapse" data-target="#moreprojects">
-          <h4>See More</h4>
-        </button>
+        <div id="toggleproject">
+          <button class="btn btn-default hvr-sweep-to-bottom" data-toggle="collapse" data-target="#moreprojects">
+            <h4>See More</h4>
+          </button>
+        </div>
         
       </div> <!--content-->
     </div>
