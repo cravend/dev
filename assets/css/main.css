@@ -17,7 +17,7 @@ footer p {
   background-color: #3e484a;
   color: white;
   margin-bottom: 0;
-  padding: 3px 10px;
+  padding: 20px 50px;
   font-size: 20px;
 }
 
@@ -46,7 +46,7 @@ footer p {
   transition: .3s ease;
 }
 
-.navbar a:focus, .navbar a:hover, .active a {
+.navbar a:focus, .navbar a:hover, .navbar .active a {
   background-color: transparent !important;
   border-top: 4px solid #26E9ED;
   border-bottom: 4px solid #26E9ED;
@@ -74,7 +74,7 @@ footer p {
   /*border: 1px solid black;*/
 }
 
-.next a:hover, a:focus {
+.next a:hover, .next a:focus {
   border-top: 4px solid white;
   border-bottom: 4px solid white;
 }
@@ -89,7 +89,7 @@ footer p {
   /*border: 1px solid black;*/
 }
 
-.blank a:hover, a:focus {
+.blank a:hover, .blank a:focus {
   border-top: 4px solid white;
   border-bottom: 4px solid white;
 }
