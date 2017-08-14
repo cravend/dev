@@ -2,7 +2,7 @@
 
 html, body {
   height: 100%;
-  color: #5E6973;
+  color: #3e484a;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,7 +14,7 @@ p {
 }
 
 footer p {
-  background-color: #5E6973;
+  background-color: #3e484a;
   color: white;
   margin-bottom: 0;
   padding: 3px 10px;
@@ -35,7 +35,7 @@ footer p {
 .navbar a {
   font-family: 'Poppins', sans-serif;
   display: block;
-  color: #5E6973;
+  color: #3e484a;
   text-align: center;
   margin: 10px 10px;
   padding: 5px 16px;
@@ -69,7 +69,7 @@ footer p {
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   text-decoration: none;
-  color: #5E6973;
+  color: #3e484a;
   transition: .3s;
   /*border: 1px solid black;*/
 }
@@ -132,7 +132,7 @@ footer p {
 }
 
 #about hr, #projects hr {
-  border-color: #5E6973;
+  border-color: #3e484a;
 }
 
 #contact {
