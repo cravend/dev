@@ -64,20 +64,19 @@ footer p {
   font-size: 500%;
 }
 
-.next a {
-  display: block;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
+.next {
+  font-weight: 500;
+  text-align: center;
   text-decoration: none;
   color: #3e484a;
-  transition: .3s;
+  font-size: 500%;
   /*border: 1px solid black;*/
 }
 
-.next a:hover, .next a:focus {
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
+.next:hover, .next:active, .next:focus {
+  color: #3e484a;
 }
+
 .blank a {
   /*overflow: hidden;*/
   display: block;
@@ -105,6 +104,7 @@ footer p {
 
 .flex-item {
   margin-top: auto;
+  text-align: center;
 }
 
 #home {
@@ -126,7 +126,7 @@ footer p {
 }
 
 #projects {
-  padding: 5% 0;
+  padding: 100px 0;
   overflow: hidden;
   background-color: #9CEAEF;
 }
@@ -148,6 +148,9 @@ footer p {
     font-size: 300%;
   }
 
+  .next {
+    font-size: 200%;
+  }
   .heading {
     font-size: 200%;
   }
