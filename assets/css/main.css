@@ -36,14 +36,13 @@ footer p {
   font-family: 'Poppins', sans-serif;
   display: block;
   color: #3e484a;
-  text-align: center;
   margin: 10px 10px;
   padding: 5px 16px;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   font-size: 150% !important;
   text-decoration: none;
-  transition: .3s ease;
+  transition: all .3s ease;
 }
 
 .navbar a:focus, .navbar a:hover, .navbar .active a {
@@ -55,9 +54,12 @@ footer p {
 .nav-brand {
   cursor: default;
   font-weight: 700;
-  font-size: 250%;
-  margin-right: 10px;
   text-transform: uppercase;
+  transition: visibility .3s ease !important;
+}
+
+.brand-desktop {
+  display: none !important;
 }
 
 .heading {
@@ -70,7 +72,6 @@ footer p {
   text-decoration: none;
   color: #3e484a;
   font-size: 500%;
-  /*border: 1px solid black;*/
 }
 
 .next:hover, .next:active, .next:focus {
@@ -78,24 +79,17 @@ footer p {
 }
 
 .blank a {
-  /*overflow: hidden;*/
   display: block;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   text-decoration: none;
   color: white;
   transition: .3s;
-  /*border: 1px solid black;*/
 }
 
 .blank a:hover, .blank a:focus {
   border-top: 4px solid white;
   border-bottom: 4px solid white;
-}
-
-.navbar-toggle {
-  font-family: 'Open Sans', sans-serif;
-
 }
 
 .social {
@@ -153,6 +147,16 @@ footer p {
   }
   .heading {
     font-size: 200%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .brand-mobile {
+    display: none !important;
+  }
+
+  .brand-desktop {
+    display: inherit !important;
   }
 }
 
