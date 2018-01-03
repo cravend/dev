@@ -18,6 +18,7 @@ gem "jekyll", "~> 3.6.2"
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
+  gem "jekyll-github-metadata"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
