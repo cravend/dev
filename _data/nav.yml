@@ -1,0 +1,9 @@
+- name: Home
+  url: /
+  hidden: true
+- name: About Me
+  url: /about
+- name: My Work
+  url: /work
+- name: Contact Me
+  url: /contact

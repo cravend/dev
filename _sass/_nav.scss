@@ -1,0 +1,31 @@
+.navbar {
+  background-color: white;
+  & a {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    color: #3e484a;
+    margin: 10px 10px;
+    padding: 5px 16px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    font-size: 150% !important;
+    text-decoration: none;
+    transition: all .3s ease;
+    &:focus, &:hover, &.active {
+      background-color: transparent !important;
+      border-top: 4px solid #26E9ED;
+      border-bottom: 4px solid #26E9ED;
+    }
+  }
+}
+
+.nav-brand {
+  cursor: default;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: visibility .3s ease !important;
+}
+
+.brand-desktop {
+  display: none !important;
+}

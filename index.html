@@ -1,10 +1,21 @@
 ---
 layout: default
+title: Home
 ---
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12">
-      <button type="button" class="btn btn-primary">Dalton</button>
+  <div id="home">
+    <div class="flex-item">
+      <h1 class="title fade-text one">Dalton<br>Craven</h1>
+      <ul class="list-inline fade-text two">
+        {% for item in site.data.nav %}
+          {% if item.hidden == null %}
+            <li class="home-item"><h2><a href="{{ item.url }}" class="next">{{ item.name }}</a></h2></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="flex-item">
+      <h4 class="fade-text three"><i class="far fa-copyright"></i> {{ 'now' | date: "%Y" }} Dalton Craven // <a href="{{ site.github.repository_url }}" target="_blank" rel="nofollow"><i class="fab fa-github"></i> view on GitHub</a></h4>
     </div>
   </div>
 </div>

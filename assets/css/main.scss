@@ -1,3 +1,72 @@
 ---
 ---
 @import "vars";
+
+@import "nav";
+
+a {
+  text-decoration: none;
+  color: $grey;
+  transition: all .2s;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: $dark-blue;
+  }
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-item {
+  padding: 0 15px !important;
+  text-transform: lowercase;
+}
+
+.flex-item {
+  margin-top: auto;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 700%;
+}
+
+.next {
+  font-weight: 500;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+// .fade-text {
+//   animation: fadeIn 4s;
+//   opacity: 0;
+// 	animation-fill-mode: forwards;
+//   &.one {
+//     animation-delay: 0s;
+//   }
+//   &.two {
+//     animation-delay: 1s;
+//   }
+//   &.three {
+//     animation-delay: 2s;
+//   }
+//   &.four {
+//     animation-delay: 3s;
+//   }
+// }
