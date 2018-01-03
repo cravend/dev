@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 300%;
+  }
+
+  .next {
+    font-size: 200%;
+  }
+  .heading {
+    font-size: 200%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .brand-mobile {
+    display: none !important;
+  }
+
+  .brand-desktop {
+    display: inherit !important;
+  }
+}

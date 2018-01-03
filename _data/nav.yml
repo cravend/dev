@@ -1,6 +1,3 @@
-- name: Home
-  url: /
-  hidden: true
 - name: About Me
   url: /about
 - name: My Work

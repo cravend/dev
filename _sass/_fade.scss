@@ -1,0 +1,22 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fade-text {
+  animation: fadeIn 4s;
+  opacity: 0;
+	animation-fill-mode: forwards;
+  &.one {
+    animation-delay: 0s;
+  }
+  &.two {
+    animation-delay: 1s;
+  }
+  &.three {
+    animation-delay: 2s;
+  }
+  &.four {
+    animation-delay: 3s;
+  }
+}
