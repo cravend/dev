@@ -3,6 +3,11 @@
 @import "vars";
 
 @import "nav";
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 
 a {
   text-decoration: none;
@@ -12,6 +17,19 @@ a {
     text-decoration: none;
     color: $dark-blue;
   }
+}
+
+footer {
+  background-color: $grey;
+  color: white;
+  a {
+    color: white;
+  }
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .home-item {
@@ -33,6 +51,7 @@ a {
 
 .container-nav {
   margin-top: 78px;
+  margin-bottom: 90px;
 }
 
 .next {
