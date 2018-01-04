@@ -7,6 +7,11 @@ html {
   min-height: 100%;
 }
 
+body {
+  min-height: 100%;
+  background-color: $dark-blue;
+}
+
 a {
   text-decoration: none;
   color: $grey;
@@ -30,7 +35,19 @@ footer {
   width: 100%;
 }
 
+h1.featurette-heading {
+  font-size: 400%;
+}
+
+h2.featurette-heading {
+  font-size: 300%;
+}
+
 @import "nav";
+
+.req {
+  color: OrangeRed;
+}
 
 .home-item {
   padding: 0 15px !important;
@@ -53,13 +70,14 @@ footer {
   margin-top: 78px;
 }
 
+.extra-big {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .next {
   font-weight: 500;
   text-align: center;
-}
-
-.featurette-heading {
-  font-size: 400%;
 }
 
 .lead {
@@ -72,8 +90,11 @@ footer {
 }
 
 #home {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-flex;
@@ -81,9 +102,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
-// @import "fade";
 #one {
   background-color: white;
 }
@@ -94,14 +115,12 @@ footer {
 
 #three {
   background-color: $mid-blue;
-  height: 20vh;
 }
 
 #four {
   background-color: $dark-blue;
-  height: 21vh;
 }
 
-@import "fade";
+// @import "fade";
 
 @import "media";
