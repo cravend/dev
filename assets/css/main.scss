@@ -2,12 +2,10 @@
 ---
 @import "vars";
 
-@import "nav";
 html {
   position: relative;
   min-height: 100%;
 }
-
 
 a {
   text-decoration: none;
@@ -31,6 +29,8 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+@import "nav";
 
 .home-item {
   padding: 0 15px !important;
@@ -58,6 +58,19 @@ footer {
   text-align: center;
 }
 
+.featurette-heading {
+  font-size: 400%;
+}
+
+.lead {
+  margin-bottom: 0;
+}
+
+.color-box {
+  padding: 15px;
+  overflow: hidden;
+}
+
 #home {
   width: 100%;
   height: 100vh;
@@ -71,5 +84,24 @@ footer {
 }
 
 // @import "fade";
+#one {
+  background-color: white;
+}
+
+#two {
+  background-color: $light-blue;
+}
+
+#three {
+  background-color: $mid-blue;
+  height: 20vh;
+}
+
+#four {
+  background-color: $dark-blue;
+  height: 21vh;
+}
+
+@import "fade";
 
 @import "media";

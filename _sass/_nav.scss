@@ -1,8 +1,8 @@
 .navbar {
   background-color: white;
   font-family: 'Poppins', sans-serif;
-  color: #3e484a;
-  a {
+  color: $grey;
+  & a {
     display: block;
     margin: 10px 10px;
     padding: 5px 16px;
@@ -12,11 +12,12 @@
     text-decoration: none;
     transition: all .3s ease;
     &:hover, &:active, &:focus {
+      // color: $neon-blue;
       background-color: transparent !important;
     }
     &.active {
-      border-top: 4px solid #26E9ED;
-      border-bottom: 4px solid #26E9ED;
+      border-top: 4px solid $neon-blue;
+      border-bottom: 4px solid $neon-blue;
     }
   }
 }
