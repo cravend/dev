@@ -6,7 +6,7 @@ layout: default
 <div class="container-fluid container-nav">
   <div class="color-box row" id="one">
     <div class="col-xs-12 col-md-10 col-md-offset-1">
-      <h1 class="featurette-heading">{{ page.title }}</h1>
+      <h1 class="featurette-heading">{{ page.title }}{% if page.wip %} <span class="small text-muted">Work in Progress</span>{% endif %}</h1>
     </div>
   </div>
   <div class="color-box row" id="two">
@@ -21,8 +21,12 @@ layout: default
   </div>
   <div class="color-box row" id="four">
     <div class="col-xs-12 col-md-10 col-md-offset-1">
-      <h1 class="featurette-heading">{{ page.title }}</h1>
-      <p class="lead"> </p>
+      <h2 class="featurette-heading">Skills Used</h2>
+      <p class="lead">{% if page.skills.first %}
+        {{ page.skills | array_to_sentence_string }}
+      {% else %}
+        {{ page.skills }}
+      {% endif %}</p>
     </div>
   </div>
 </div>
