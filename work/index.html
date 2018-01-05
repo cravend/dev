@@ -15,8 +15,12 @@ title: My Work
     </div>
     <div class="color-box row" id="three">
       <div class="col-xs-12 col-md-10 col-md-offset-1">
-        <h1 class="featurette-heading">{{ page.title }}</h1>
-        <p class="lead"> </p>
+        {% for project in site.projects %}
+        <div class="col-xs-12 col-sm-6">
+          <a href="{{ project.url }}"><img src="/assets/images/projects/{{ project.image }}" alt="{{ project.title }}" class="img-responsive img-rounded"><h2 class="featurette-heading">{{ project.title }}</h2></a>
+          <span class="lead">{{ project.description | default: project.content | truncate: 80 }}</span>
+        </div>
+        {% endfor %}
       </div>
     </div>
     <div class="color-box row" id="four">
