@@ -47,14 +47,19 @@ title: Contact
   </div>
   <div class="color-box row" id="three">
     <div class="col-xs-12 col-md-10 col-md-offset-1">
-      <h1 class="featurette-heading">{{ page.title }}</h1>
-      <p class="lead"> </p>
+      <p class="lead">The easiest way to contact me is to use the form above. Need something else? Shoot me an email at <a href="mailto:20dalton00@gmail.com">20dalton00@gmail.com</a> or check out the following:</p>
     </div>
   </div>
-  <div class="color-box row" id="four">
-    <div class="col-xs-12 col-md-10 col-md-offset-1">
-      <h1 class="featurette-heading">{{ page.title }}</h1>
-      <p class="lead"> </p>
+  <div class="color-box row social" id="four">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      {% for social in site.data.social %}
+      <div class="col-xs-6 text-center">
+        <a href="{{ social.link }}" target="_blank" rel="noopener">
+          <i class="{{ social.icon }} fa-fw fa-5x" aria-hidden="true"></i>
+          <h4>{{ social.name }}</h4>
+        </a>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </div>

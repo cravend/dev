@@ -80,6 +80,20 @@ h2.featurette-heading {
   text-align: center;
 }
 
+.social {
+  & a {
+    display: inline-block;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    transition: .5s;
+  }
+
+  & a:hover, & a:focus {
+    color: white;
+  }
+}
+
 .lead {
   margin-bottom: 0;
 }
