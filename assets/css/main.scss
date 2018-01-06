@@ -9,7 +9,6 @@ html {
 
 body {
   min-height: 100%;
-  background-color: $dark-blue;
   color: $grey;
 }
 
@@ -17,9 +16,12 @@ a {
   text-decoration: none;
   color: $grey;
   transition: all .2s;
-  &:hover, &:active, &:focus {
+  &:hover, &:active {
     text-decoration: none;
     color: $dark-blue;
+  }
+  &:focus {
+    text-decoration: none;
   }
 }
 
@@ -68,7 +70,7 @@ h2.featurette-heading {
 }
 
 .container-nav {
-  margin-top: 78px;
+  margin-top: 68px;
 }
 
 .extra-big {
@@ -104,6 +106,7 @@ h2.featurette-heading {
   left: 0;
   width: 100%;
   height: 100%;
+  // max-height: 100%;
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-flex;
@@ -112,6 +115,11 @@ h2.featurette-heading {
   align-items: center;
   justify-content: center;
   background-color: white;
+}
+
+#home-footer {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #one {
@@ -128,7 +136,7 @@ h2.featurette-heading {
 
 #four {
   background-color: $dark-blue;
-  & a:active, a:hover, & a:focus {
+  & a:active, a:hover {
     color: white;
   }
 }

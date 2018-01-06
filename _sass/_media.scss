@@ -1,17 +1,30 @@
 @media only screen and (max-width: 768px) {
   .title {
-    font-size: 300%;
+    font-size: 400%;
   }
 
   .next {
-    font-size: 200%;
+    font-size: 100%;
   }
   .heading {
     font-size: 200%;
   }
+
+  h1.featurette-heading {
+    margin-top: 0;
+    font-size: 350%;
+  }
+
+  h2.featurette-heading {
+    font-size: 200%;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .brand-mobile {
     display: none !important;
   }
