@@ -10,7 +10,7 @@ title: My Work
     </div>
     <div class="color-box row" id="two">
       <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
-        <p class="lead">Hi! My name is Dalton Craven. I'm an 11th grader at Mason High School. I've been interested in computers my whole life, and taking programming my freshman year helped me decide that was what I wanted to do. Right now, I'm the Finance Director and Webmaster for Mason Hack Club, as well as the Webmaster for Mason ACM. I'm also learning basic server management & web design through the Integrated Media Internship program. I've interned with the City of Mason's IT team & Various Views Research to get hands-on experience in real-life workplaces. Outside of school, I like working on my 1963 Mercury Comet, reading, and working at Kings Island. Check out my full résumé here.</p>
+        <p class="lead">These are some of my recent projects. Click on the thumbnails for details about what I did!</p>
       </div>
     </div>
     <div class="color-box row" id="three">
@@ -20,13 +20,16 @@ title: My Work
           <a href="{{ project.url }}"><img src="/assets/images/projects/{{ project.image }}" alt="{{ project.title }}" class="img-responsive img-rounded"><h2 class="featurette-heading">{{ project.title }}</h2></a>
           <span class="lead">{{ project.description | default: project.content | truncate: 80 }}</span>
         </div>
+        {% assign oddeven = forloop.index | modulo: 2 %}
+        {% if oddeven == 0 %}
+        <div class="clearfix"></div>
+        {% endif %}
         {% endfor %}
       </div>
     </div>
     <div class="color-box row" id="four">
-      <div class="col-xs-12 col-md-10 col-md-offset-1">
-        <h1 class="featurette-heading">{{ page.title }}</h1>
-        <p class="lead"> </p>
+      <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
+        <p class="lead">Have any questions about my work? Need a website developed? Feel free to contact me! Check the <a href="/contact">contact</a> page out or email me at <a href="mailto:20dalton00@gmail.com">20dalton00@gmail.com</a>.</p>
       </div>
     </div>
 </div>

@@ -10,6 +10,7 @@ html {
 body {
   min-height: 100%;
   background-color: $dark-blue;
+  color: $grey;
 }
 
 a {
@@ -83,14 +84,8 @@ h2.featurette-heading {
 .social {
   & a {
     display: inline-block;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
     text-decoration: none;
     transition: .5s;
-  }
-
-  & a:hover, & a:focus {
-    color: white;
   }
 }
 
@@ -133,6 +128,9 @@ h2.featurette-heading {
 
 #four {
   background-color: $dark-blue;
+  & a:active, a:hover, & a:focus {
+    color: white;
+  }
 }
 
 @import "fade";
