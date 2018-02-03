@@ -52,6 +52,9 @@ h2.featurette-heading {
   color: OrangeRed;
 }
 
+.tall {
+  min-height: 20vh !important;
+}
 .home-item {
   padding: 0 15px !important;
   text-transform: lowercase;
@@ -101,7 +104,7 @@ h2.featurette-heading {
 }
 
 .img-left {
-  margin-right: 5px;
+  margin-right: 40px;
   float: left;
   width: 25%;
 }
