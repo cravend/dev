@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { // mobile
   .title {
     font-size: 400%;
   }
@@ -21,6 +21,12 @@
 
   .lead {
     font-size: 18px;
+  }
+
+  .img-left {
+    display: block;
+    margin: auto;
+    width: 100%;
   }
 }
 
