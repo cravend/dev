@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px) { // mobile
+  .title {
+    font-size: 400%;
+  }
+
+  .next {
+    font-size: 100%;
+  }
+  .heading {
+    font-size: 200%;
+  }
+
+  h1.featurette-heading {
+    margin-top: 0;
+    font-size: 350%;
+  }
+
+  h2.featurette-heading {
+    font-size: 200%;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .img-left {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .brand-mobile {
+    display: none !important;
+  }
+
+  .brand-desktop {
+    display: inherit !important;
+  }
+}

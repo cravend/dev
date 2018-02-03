@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% include nav.html %}
+
+<div class="container-fluid container-nav">
+  <div class="color-box row" id="one">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+      <h1 class="featurette-heading">{{ page.title }}{% if page.wip %} <span class="small text-muted">Work in Progress</span>{% endif %}</h1>
+    </div>
+  </div>
+  <div class="color-box row" id="two">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <a href="{{ page.link }}" target="_blank" rel="nofollow"><img src="/assets/images/projects/{{ page.image }}" alt="{{ page.title }}" class="img-responsive img-rounded"></a>
+    </div>
+  </div>
+  <div class="color-box row" id="three">
+    <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
+      <span class="lead">{{ content }}</span>
+    </div>
+  </div>
+  <div class="color-box row" id="four">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+      <h2 class="featurette-heading">Skills Used</h2>
+      <p class="lead">{% if page.skills.first %}
+        {{ page.skills | array_to_sentence_string }}
+      {% else %}
+        {{ page.skills }}
+      {% endif %}</p>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
+
+<script src="/assets/js/footer.js"></script>

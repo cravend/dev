@@ -1,0 +1,6 @@
+- name: LinkedIn
+  icon: fab fa-linkedin
+  link: https://www.linkedin.com/in/dalton-craven/
+- name: GitHub
+  icon: fab fa-github
+  link: https://github.com/cravend

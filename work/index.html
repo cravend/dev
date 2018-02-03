@@ -1,0 +1,35 @@
+---
+layout: page
+title: My Work
+---
+<div class="container-fluid container-nav">
+    <div class="color-box row" id="one">
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <h1 class="featurette-heading">{{ page.title }}</h1>
+      </div>
+    </div>
+    <div class="color-box row" id="two">
+      <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
+        <p class="lead">These are some of my recent projects. Click a thumbnail to see the live website!</p>
+      </div>
+    </div>
+    <div class="color-box row" id="three">
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        {% for project in site.projects %}
+        <div class="col-xs-12 col-sm-6">
+          <a href="{{ project.link }}" target="_blank" rel="nofollow"><img src="/assets/images/projects/{{ project.image }}" alt="{{ project.title }}" class="img-responsive img-rounded"><h2 class="featurette-heading">{{ project.title }}</h2></a>
+          <span class="lead">{{ project.description | default: project.content | truncate: 80 }}</span>
+        </div>
+        {% assign oddeven = forloop.index | modulo: 2 %}
+        {% if oddeven == 0 %}
+        <div class="clearfix"></div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="color-box row" id="four">
+      <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
+        <p class="lead">Have any questions about my work? Need a website developed? Feel free to contact me! <a href="/contact">Check the contact page out</a> or email me at <a href="mailto:20dalton00@gmail.com">20dalton00@gmail.com</a>.</p>
+      </div>
+    </div>
+</div>

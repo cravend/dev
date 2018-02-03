@@ -1,0 +1,67 @@
+---
+layout: page
+title: Contact
+---
+<div class="container-fluid container-nav">
+  <div class="color-box row" id="one">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+      <h1 class="featurette-heading">{{ page.title }}</h1>
+    </div>
+  </div>
+  <div class="color-box row" id="two">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+      <form id="contact">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <h4>First Name <span class="req">*</span></h4>
+                <input type="text" name="firstname" id="firstname" class="form-control" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <h4>Last Name <span class="req">*</span></h4>
+                <input type="text" name="lastname" id="lastname" class="form-control" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <h4>Email <span class="req">*</span></h4>
+              <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <h4>Subject <span class="req">*</span></h4>
+              <input type="text" name="subject" id="subject" class="form-control" required>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <h4>Message <span class="req">*</span></h4>
+              <textarea name="message" id="message" class="form-control" rows="10" required></textarea>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <input type="submit" class="btn btn-default btn-lg" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="color-box row" id="three">
+    <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
+      <p class="lead">The easiest way to contact me is to use the form above. Need something else? Shoot me an email at <a href="mailto:20dalton00@gmail.com">20dalton00@gmail.com</a> or check out the following:</p>
+    </div>
+  </div>
+  <div class="color-box row social" id="four">
+    <div class="col-xs-12 col-md-6 col-md-offset-3 extra-big">
+      {% for social in site.data.social %}
+      <div class="col-xs-6 text-center">
+        <a href="{{ social.link }}" target="_blank" rel="noopener">
+          <i class="{{ social.icon }} fa-fw fa-5x" aria-hidden="true"></i>
+          <h4>{{ social.name }}</h4>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script src="submit.js"></script>

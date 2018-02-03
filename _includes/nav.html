@@ -1,0 +1,18 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation"><i class="fas fa-bars fa-2x fa-fw"></i></button>
+      <a href="/" class="nav-brand brand-mobile">Dalton Craven</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav">
+          <li><a href="/" class="nav-brand brand-desktop">Dalton Craven</a></li>
+          {% for nav in site.data.nav %}
+            <li><a href="{{ nav.url }}" {% if page.url contains nav.url %}class="active"{% endif %}>{{ nav.name }}<!--{{ nav.url }}--></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
