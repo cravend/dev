@@ -10,14 +10,14 @@ title: My Work
     </div>
     <div class="color-box row" id="two">
       <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
-        <p class="lead">These are some of my recent projects. Click on the thumbnails for details about what I did!</p>
+        <p class="lead">These are some of my recent projects. Click a thumbnail to see the live website!</p>
       </div>
     </div>
     <div class="color-box row" id="three">
       <div class="col-xs-12 col-md-10 col-md-offset-1">
         {% for project in site.projects %}
         <div class="col-xs-12 col-sm-6">
-          <a href="{{ project.url }}"><img src="/assets/images/projects/{{ project.image }}" alt="{{ project.title }}" class="img-responsive img-rounded"><h2 class="featurette-heading">{{ project.title }}</h2></a>
+          <a href="{{ project.link }}" target="_blank" rel="nofollow"><img src="/assets/images/projects/{{ project.image }}" alt="{{ project.title }}" class="img-responsive img-rounded"><h2 class="featurette-heading">{{ project.title }}</h2></a>
           <span class="lead">{{ project.description | default: project.content | truncate: 80 }}</span>
         </div>
         {% assign oddeven = forloop.index | modulo: 2 %}
