@@ -1,6 +1,12 @@
+- name: Email
+  icon: fas fa-envelope
+  link: mailto:daltonjcraven@gmail.com
+- name: Telephone
+  icon: fas fa-phone
+  link: tel:5138136421
 - name: LinkedIn
   icon: fab fa-linkedin
-  link: https://www.linkedin.com/in/dalton-craven/
+  link: https://www.linkedin.com/in/dalton-craven
 - name: GitHub
   icon: fab fa-github
   link: https://github.com/cravend
