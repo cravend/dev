@@ -38,4 +38,11 @@
   .brand-desktop {
     display: inherit !important;
   }
+
+  .navbar a.active:hover {
+    padding-top: 11px;
+    margin-top: 14px;
+    padding-bottom: 11px;
+    margin-bottom: 14px;
+  }
 }

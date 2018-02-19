@@ -9,7 +9,7 @@
         <ul class="nav navbar-nav">
           <li><a href="/" class="nav-brand brand-desktop">Dalton Craven</a></li>
           {% for nav in site.data.nav %}
-            <li><a href="{{ nav.url }}" {% if page.url contains nav.url %}class="active"{% endif %}>{{ nav.name }}<!--{{ nav.url }}--></a></li>
+            <li><a href="{{ nav.url }}" {% if page.url contains nav.url %}class="active"{% endif %}>{{ nav.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
