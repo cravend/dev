@@ -8,7 +8,7 @@ github_username:  cravend
 repository: cravend/cravend.github.io
 # Build settings
 markdown: kramdown
-gtag: UA-38154009-2
+google_analytics: UA-38154009-2
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
