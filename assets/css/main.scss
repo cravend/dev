@@ -65,6 +65,30 @@ h2.featurette-heading {
   text-align: center;
 }
 
+.hover-link {
+    position: relative;
+    color: $grey;
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+      color: $grey !important;
+      text-decoration: none;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 1px;
+      left: 0;
+      background-color: $grey;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+    &:hover:before, &:active:before {
+      bottom: -1px;
+    }
+}
+
 .title {
   font-weight: 700;
   text-transform: uppercase;
@@ -115,7 +139,6 @@ h2.featurette-heading {
   left: 0;
   width: 100%;
   height: 100%;
-  // max-height: 100%;
   background-size: cover;
   background-attachment: fixed;
   display: -webkit-flex;
