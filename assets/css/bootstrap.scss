@@ -1,3 +1,17 @@
 ---
 ---
 @import "bootstrap-custom";
+@import "custom-buttons";
+
+.btn-blue {
+  @include button-variant($grey, $dark-blue, $dark-blue);
+}
+
+.btn-grey {
+  @include button-variant-light(#fff, $grey, $grey);
+}
+
+
+.btn-grey-blue {
+  @include button-variant-color(#fff, $grey, $grey, $grey, $dark-blue);
+}

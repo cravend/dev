@@ -116,6 +116,10 @@ h2.featurette-heading {
   text-align: center;
 }
 
+.form-control {
+  border-radius: 0;
+}
+
 .social {
   & a {
     display: inline-block;
@@ -135,6 +139,14 @@ h2.featurette-heading {
 
 .img-me {
   margin-bottom: 5px;
+}
+
+.btn {
+  border-radius: 0;
+  // text-transform: uppercase;
+  text-weight: 700;
+  font-family: $headings-font-family;
+  transition: all 0.3s;
 }
 
 #home {

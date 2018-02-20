@@ -1,0 +1,105 @@
+@mixin button-variant-light($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: lighten($background, 10%);
+        border-color: lighten($border, 25%);
+  }
+  &:hover {
+    color: $color;
+    background-color: lighten($background, 10%);
+        border-color: lighten($border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: lighten($background, 10%);
+        border-color: lighten($border, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: lighten($background, 17%);
+          border-color: lighten($border, 25%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@mixin button-variant-color($color, $background, $border, $hover-color, $hover-background) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: $hover-background;
+        border-color: $hover-color;
+  }
+  &:hover {
+    color: $color;
+    background-color: $hover-background;
+        border-color: $hover-color;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $hover-background;
+        border-color: $hover-color;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: $hover-background;
+          border-color: $hover-color;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
