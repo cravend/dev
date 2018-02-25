@@ -19,6 +19,9 @@ collections:
     output: true
     permalink: /work/:name
 
+sass:
+  style: compressed
+
 defaults:
   -
     scope:
