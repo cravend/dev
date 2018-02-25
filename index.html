@@ -1,21 +1,38 @@
 ---
-layout: default
 title: Home
 ---
-<div class="container-fluid">
-  <div id="home">
-    <div class="flex-item">
-      <h1 class="title fade-text one">Dalton<br>Craven</h1>
-      <ul class="list-inline fade-text two">
-        {% for item in site.data.nav %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico">
+  <link href="/assets/css/bootstrap.css" rel="stylesheet">
+  <link href="/assets/css/home.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:500,700" rel="stylesheet">
+  {% if jekyll.environment == 'production' and site.google_analytics %}{% include google-analytics.html %}{% endif %}
+  {% seo %}
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="home">
+      <div class="flex-item">
+        <h1 class="title fade-text one">Dalton<br>Craven</h1>
+        <ul class="list-inline fade-text two">
+          {% for item in site.data.nav %}
           {% if item.hidden == null %}
-            <li class="home-item"><h2><a href="{{ item.url }}" class="next">{{ item.name }}</a></h2></li>
+          <li class="home-item"><h2><a href="{{ item.url }}" class="next">{{ item.name }}</a></h2></li>
           {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-    <div id="home-footer" class="flex-item">
-      <h4 class="fade-text three"><i class="far fa-copyright"></i> {{ 'now' | date: "%Y" }} Dalton Craven<span class="hidden-xs"> // </span><br class="visible-xs"><a href="{{ site.github.repository_url }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> view on GitHub</a></h4>
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="home-footer" class="flex-item">
+        <h4 class="fade-text three"><i class="far fa-copyright"></i> {{ 'now' | date: "%Y" }} Dalton Craven<span class="hidden-xs"> // </span><br class="visible-xs"><a href="{{ site.github.repository_url }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> view on GitHub</a></h4>
+      </div>
     </div>
   </div>
-</div>
+</body>
+</html>
