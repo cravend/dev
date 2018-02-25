@@ -6,7 +6,7 @@ $('#contact').submit(function(e){
         data:$('#contact').serialize(),
         success:function(){
           // Redirect to another success page
-          window.location = "thanks";
+          window.location = "/contact/thanks";
         }
     });
 });
