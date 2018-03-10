@@ -1,5 +1,5 @@
 ---
 title: Mason Hack Club
-image: masonhackclub.png
+image: masonhackclub.jpg
 link: https://masonhackclub.com
 ---

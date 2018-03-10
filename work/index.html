@@ -1,36 +1,49 @@
 ---
 layout: page
 title: Work
+js: "/assets/js/image.js"
 ---
 <div class="container-fluid container-nav">
-    <div class="color-box row" id="one">
-      <div class="col-xs-12 col-md-10 col-md-offset-1">
-        <h1 class="featurette-heading">{{ page.title }}</h1>
-      </div>
+  <div class="color-box row" id="one">
+    <div class="col-xs-12 col-md-10 col-md-offset-1">
+      <h1 class="featurette-heading">{{ page.title }}</h1>
     </div>
-    <div class="color-box row" id="two">
-      <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
-        <p>These are some of my recent projects. Click a thumbnail to see the live website!</p>
-      </div>
+  </div>
+  <div class="color-box row" id="two">
+    <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
+      <p>These are some of my recent projects. Click a thumbnail to see the live website!</p>
     </div>
-    <div class="color-box row" id="three">
-      <div class="col-xs-12 col-md-10 col-md-offset-1">
-        {% for project in site.projects %}
-        <div class="col-xs-12 col-sm-6">
-          <a href="{{ project.link }}" target="_blank" rel="nofollow" class="hover-link"><img src="/assets/images/projects/{{ project.image }}" alt="{{ project.title }}" class="img-responsive img-rounded"><h2 class="featurette-heading">{{ project.title }}</h2></a>
-          <span class="lead">{{ project.description | default: project.content | truncate: 80 }}</span>
-        </div>
-        {% assign oddeven = forloop.index | modulo: 2 %}
-        {% if oddeven == 0 %}
-        <div class="clearfix"></div>
-        {% endif %}
-        {% endfor %}
+  </div>
+  <div class="color-box row" id="three">
+    <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+
+
+      {% for project in site.projects %}
+      {% assign oddeven = forloop.index | modulo: 2 %}
+      {% if oddeven == 1 %}
+      <div class="row">
+      {% endif %}
+      <div class="col-xs-12 col-sm-6">
+        <h2 class="featurette-heading">{{ project.title }}</h2>
+        <a href="{{ project.link }}" target="_blank" data-href="/assets/images/projects/{{ project.image }}" class="progressive replace img-rounded">
+          <img src="/assets/images/projects/min/{{ project.image }}" class="preview" alt="{{ project.title }}" />
+        </a>
+        <hr>
+        <span class="lead">{{ project.description | default: project.content | truncate: 80 }}</span>
       </div>
-    </div>
-    <div class="color-box row" id="four">
-      <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
-        <h2 class="featurette-heading">Want to learn more?</h2>
-        <p>Contact me <a href="/contact" class="hover-link">here</a> or read more <a href="/about" class="hover-link">about me</a>.</p>
+      {% if oddeven == 0 %}
       </div>
+      {% endif %}
+      {% endfor %}
+      {% if oddeven == 1 %}
+      </div>
+      {% endif %}
     </div>
+  </div>
+  <div class="color-box row" id="four">
+    <div class="col-xs-12 col-md-10 col-md-offset-1 extra-big">
+      <h2 class="featurette-heading">Want to learn more?</h2>
+      <p>Contact me <a href="/contact" class="hover-link">here</a> or read more <a href="/about" class="hover-link">about me</a>.</p>
+    </div>
+  </div>
 </div>

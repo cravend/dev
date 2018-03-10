@@ -141,6 +141,9 @@ h2.featurette-heading {
 
 #three {
   background-color: $mid-blue;
+  & hr {
+    border-color: $grey !important;
+  }
 }
 
 #four {

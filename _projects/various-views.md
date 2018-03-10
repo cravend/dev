@@ -1,6 +1,6 @@
 ---
 title: Various Views
-image: variousviews.png
+image: variousviews.jpg
 link: http://new.variousviews.com
 wip: true
 ---

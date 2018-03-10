@@ -1,5 +1,5 @@
 ---
 title: Mason Student Activities
-image: activities.png
+image: activities.jpg
 link: http://activities.masoncomets.org
 ---

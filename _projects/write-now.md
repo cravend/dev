@@ -1,5 +1,5 @@
 ---
 title: Write Now Success
-image: writenow.png
+image: writenow.jpg
 link: https://writenowsuccess.com
 ---

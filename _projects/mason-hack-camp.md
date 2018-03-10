@@ -1,5 +1,5 @@
 ---
 title: Hack Camp 2017
-image: masonhackcamp.png
+image: masonhackcamp.jpg
 link: https://camp.masonhackclub.com
 ---
